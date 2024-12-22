@@ -45,7 +45,7 @@ const FindMeOn = () => {
           {socials.map((social, index) => (
             <Link
               className="
-                flex flex-col justify-center items-center gap-1 p-5 bg-zinc-800 rounded-lg hover:bg-zinc-900 text-zinc-200 text-lg border-2 border-zinc-700 md:text-xl transition-all duration-300 ease-in-out
+                flex flex-col justify-center items-center gap-1 p-5 bg-zinc-900 rounded-lg hover:bg-zinc-900 text-zinc-200 text-lg border-2 border-zinc-800 md:text-xl transition-all duration-300 ease-in-out
                 "
               key={index}
               href={social.link}

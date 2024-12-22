@@ -11,7 +11,7 @@ const Skills = () => {
         <div className="flex flex-wrap justify-start items-start gap-3 w-full">
           {skills.map((skill, index) => (
             <p
-              className="text-md md:text-lg font-medium bg-zinc-800 hover:bg-zinc-900 border-2 border-zinc-700 py-1 px-3 md:px-5 rounded-lg text-zinc-200 flex items-center gap-1 transition-all duration-300 ease-in-out"
+              className="text-md md:text-lg font-medium bg-zinc-900 hover:bg-zinc-900 border-2 border-zinc-800 py-1 px-3 md:px-5 rounded-lg text-zinc-200 flex items-center gap-1 transition-all duration-300 ease-in-out"
               key={index}
             >
               <span>{skill.skillIcon}</span>

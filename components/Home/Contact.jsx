@@ -52,7 +52,7 @@ const Contact = () => {
               value={name}
               onChange={(e) => setName(e.target.value)}
               placeholder="Your Name"
-              className="w-full py-1 md:py-2 px-3 md:px-5 bg-zinc-800 focus:bg-zinc-900 focus:border-zinc-200 text-zinc-300 border-2 border-zinc-700 rounded-lg transition-all duration-300 ease-in-out outline-none"
+              className="w-full py-1 md:py-2 px-3 md:px-5 bg-zinc-900 focus:bg-zinc-900 focus:border-zinc-200 text-zinc-300 border-2 border-zinc-800 rounded-lg transition-all duration-300 ease-in-out outline-none"
             />
           </div>
           <div className="flex flex-col justify-start items-start w-full gap-1">
@@ -69,7 +69,7 @@ const Contact = () => {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               placeholder="youremail@xyz.com"
-              className="w-full py-1 md:py-2 px-3 md:px-5 bg-zinc-800 focus:bg-zinc-900 focus:border-zinc-200 text-zinc-300 border-2 border-zinc-700 rounded-lg transition-all duration-300 ease-in-out outline-none"
+              className="w-full py-1 md:py-2 px-3 md:px-5 bg-zinc-900 focus:bg-zinc-900 focus:border-zinc-200 text-zinc-300 border-2 border-zinc-800 rounded-lg transition-all duration-300 ease-in-out outline-none"
             />
           </div>
           <div className="flex flex-col justify-start items-start w-full gap-1">
@@ -86,12 +86,12 @@ const Contact = () => {
               type="text"
               id="message"
               placeholder="Your Message"
-              className="w-full py-1 md:py-2 px-3 md:px-5 bg-zinc-800 focus:bg-zinc-900 focus:border-zinc-200 text-zinc-300 border-2 border-zinc-700 rounded-lg transition-all duration-300 ease-in-out outline-none"
+              className="w-full py-1 md:py-2 px-3 md:px-5 bg-zinc-900 focus:bg-zinc-900 focus:border-zinc-200 text-zinc-300 border-2 border-zinc-800 rounded-lg transition-all duration-300 ease-in-out outline-none"
             />
           </div>
           <button
             onClick={handleSubmit}
-            className="py-1 px-3 md:px-5 bg-zinc-800 hover:bg-zinc-900 text-zinc-200 text-lg font-medium border-2 border-zinc-300 rounded-lg transition-all duration-300 ease-in-out flex items-center gap-3"
+            className="py-1 px-3 md:px-5 bg-zinc-900 hover:bg-zinc-900 text-zinc-200 text-lg font-medium border-2 border-zinc-300 rounded-lg transition-all duration-300 ease-in-out flex items-center gap-3"
           >
             {`${btn}`} <AiOutlineSend className="inline-block" />
           </button>
