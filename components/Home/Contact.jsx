@@ -33,12 +33,12 @@ const Contact = () => {
 
   return (
     <section className="flex justify-center items-center w-full">
-      <div className="flex flex-col justify-start items-start w-[95vw] md:w-[80vw] lg:w-[70vw] xl:w-[60vw] 2xl:w-[50vw] px-2 md:px-0 gap-2">
+      <div className="flex flex-col justify-start items-start w-[95vw] md:w-[80vw] lg:w-[70vw] xl:w-[60vw] 2xl:w-[50vw] px-2 md:px-0 gap-4">
         <h2 className="text-2xl md:text-3xl font-medium text-zinc-100">
           Drop me a message
         </h2>
         <form className="flex flex-col justify-start items-start gap-2 w-full">
-          <div className="flex flex-col justify-start items-start w-full">
+          <div className="flex flex-col justify-start items-start w-full gap-1">
             <label
               className="text-lg md:text-xl font-medium text-zinc-200"
               htmlFor="name"
@@ -55,7 +55,7 @@ const Contact = () => {
               className="w-full py-1 md:py-2 px-3 md:px-5 bg-zinc-800 focus:bg-zinc-900 focus:border-zinc-200 text-zinc-300 border-2 border-zinc-700 rounded-lg transition-all duration-300 ease-in-out outline-none"
             />
           </div>
-          <div className="flex flex-col justify-start items-start w-full">
+          <div className="flex flex-col justify-start items-start w-full gap-1">
             <label
               className="text-lg md:text-xl font-medium text-zinc-200"
               htmlFor="email"
@@ -72,7 +72,7 @@ const Contact = () => {
               className="w-full py-1 md:py-2 px-3 md:px-5 bg-zinc-800 focus:bg-zinc-900 focus:border-zinc-200 text-zinc-300 border-2 border-zinc-700 rounded-lg transition-all duration-300 ease-in-out outline-none"
             />
           </div>
-          <div className="flex flex-col justify-start items-start w-full">
+          <div className="flex flex-col justify-start items-start w-full gap-1">
             <label
               className="text-lg md:text-xl font-medium text-zinc-200"
               htmlFor="message"
@@ -91,7 +91,7 @@ const Contact = () => {
           </div>
           <button
             onClick={handleSubmit}
-            className="py-1 md:py-2 px-3 md:px-5 bg-zinc-800 hover:bg-zinc-900 text-zinc-200 text-lg font-medium border-2 border-zinc-300 rounded-lg transition-all duration-300 ease-in-out flex items-center gap-3"
+            className="py-1 px-3 md:px-5 bg-zinc-800 hover:bg-zinc-900 text-zinc-200 text-lg font-medium border-2 border-zinc-300 rounded-lg transition-all duration-300 ease-in-out flex items-center gap-3"
           >
             {`${btn}`} <AiOutlineSend className="inline-block" />
           </button>

@@ -41,7 +41,7 @@ const FindMeOn = () => {
         <h2 className="text-2xl md:text-3xl font-medium text-zinc-100">
           Find me on
         </h2>
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-5 w-full">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mt-4 w-full">
           {socials.map((social, index) => (
             <Link
               className="

@@ -7,11 +7,11 @@ import { IoGlobeOutline } from "react-icons/io5";
 const Projects = () => {
   return (
     <section className="flex justify-center items-center w-full">
-      <div className="flex flex-col justify-start items-start w-[95vw] md:w-[80vw] lg:w-[70vw] xl:w-[60vw] 2xl:w-[50vw] px-2 md:px-0 gap-2">
+      <div className="flex flex-col justify-start items-start w-[95vw] md:w-[80vw] lg:w-[70vw] xl:w-[60vw] 2xl:w-[50vw] px-2 md:px-0 gap-4">
         <h2 className="text-2xl md:text-3xl font-medium text-zinc-100">
           Thing i worked on
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-start items-stretch gap-3 w-full">
+        <div className="grid grid-cols-1 md:grid-cols-2 justify-start items-stretch gap-3 w-full">
           {projexts.map((project, index) => (
             <div
               className="flex flex-col justify-between items-start w-full gap-2 p-5 rounded-lg bg-zinc-800
