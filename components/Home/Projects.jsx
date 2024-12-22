@@ -27,11 +27,11 @@ const Projects = () => {
               </div>
               <div className="flex flex-col justify-start items-start gap-2 h-full mt-2">
                 <div className="flex flex-wrap justify-start items-start gap-2">
-                {project.tech.map((icon, index) => (
-                  <span key={index} className="text-xl text-zinc-300">
-                    {icon}
-                  </span>
-                ))}
+                  {project.tech.map((icon, index) => (
+                    <span key={index} className="text-xl text-zinc-300">
+                      {icon}
+                    </span>
+                  ))}
                 </div>
                 <div className="flex flex-wrap justify-start items-center gap-2 mt-2">
                   <Link
@@ -41,7 +41,7 @@ const Projects = () => {
                     text-md font-medium text-zinc-200 bg-zinc-900 hover:bg-zinc-900 border-2 border-zinc-300 py-1 px-3 rounded-lg transition-all duration-300 ease-in-out flex items-center gap-2
                     "
                   >
-                    Source Code <FaGithub className="inline-block" />
+                    Github <FaGithub className="inline-block" />
                   </Link>
                   {project.link && (
                     <Link
@@ -51,7 +51,7 @@ const Projects = () => {
                     text-md font-medium text-zinc-200 bg-zinc-900 hover:bg-zinc-900 border-2 border-zinc-300 py-1 px-3 rounded-lg transition-all duration-300 ease-in-out flex items-center gap-2
                     "
                     >
-                      Live Demo <IoGlobeOutline className="inline-block" />
+                      Live <IoGlobeOutline className="inline-block" />
                     </Link>
                   )}
                 </div>
