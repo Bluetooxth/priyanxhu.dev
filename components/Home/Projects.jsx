@@ -2,7 +2,7 @@ import React from "react";
 import projexts from "@/data/Projects";
 import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
-import { LuPlugZap } from "react-icons/lu";
+import { GiWireframeGlobe } from "react-icons/gi";
 
 const Projects = () => {
   return (
@@ -25,13 +25,13 @@ const Projects = () => {
                     href={project.link}
                     className="text-xl font-medium text-zinc-200 flex items-center gap-2 underline"
                   >
-                    <LuPlugZap className="" /> {project.name}
+                    <GiWireframeGlobe className="" /> {project.name}
                   </Link>
                   <Link href={project.github} className="text-zinc-200">
                     <FaGithub className="text-2xl text-zinc-300" />
                   </Link>
                 </div>
-                <p className="text-lg text-zinc-300">{project.desc}</p>
+                <p className="text-lg text-zinc-300 mt-1">{project.desc}</p>
               </div>
               <div className="flex flex-col justify-start items-start gap-2 h-full mt-2">
                 <div className="flex flex-wrap justify-start items-start gap-2">

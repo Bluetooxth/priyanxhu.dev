@@ -91,7 +91,7 @@ const Contact = () => {
           </div>
           <button
             onClick={handleSubmit}
-            className="py-1 px-3 md:px-5 bg-zinc-900 hover:bg-zinc-900 text-zinc-200 text-lg font-medium border-2 border-zinc-300 rounded-lg transition-all duration-300 ease-in-out flex items-center gap-3"
+            className="py-1 px-3 md:px-5 bg-zinc-200 hover:bg-zinc-300 text-zinc-700 text-lg font-medium border-2 border-zinc-300 rounded-lg transition-all duration-300 ease-in-out flex items-center gap-3"
           >
             {`${btn}`} <AiOutlineSend className="inline-block" />
           </button>
