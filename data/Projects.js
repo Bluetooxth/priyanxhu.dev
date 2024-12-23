@@ -41,12 +41,6 @@ const projexts = [
     link: "https://dokxyv1.vercel.app",
     github: "https://github.com/Bluetooxth/healthcare",
   },
-  {
-    name: "ReactJS Projects",
-    tech: [<FaReact />],
-    desc: "A collection showcasing diverse ReactJS projects to enhance learning and skill development.",
-    github: "https://github.com/Bluetooxth/React-Projects",
-  },
 ];
 
 export default projexts;

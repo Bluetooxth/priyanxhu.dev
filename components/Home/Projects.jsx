@@ -27,7 +27,7 @@ const Projects = () => {
                   >
                     <LuPlugZap className="" /> {project.name}
                   </Link>
-                  <Link href={project.link} className="text-zinc-200">
+                  <Link href={project.github} className="text-zinc-200">
                     <FaGithub className="text-2xl text-zinc-300" />
                   </Link>
                 </div>
