@@ -2,7 +2,7 @@ import React from "react";
 import projexts from "@/data/Projects";
 import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
-import { GiWireframeGlobe } from "react-icons/gi";
+import { LiaExternalLinkAltSolid } from "react-icons/lia";
 
 const Projects = () => {
   return (
@@ -11,7 +11,7 @@ const Projects = () => {
         <h2 className="text-2xl md:text-3xl font-medium text-zinc-100">
           Things i worked on
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 justify-start items-stretch gap-3 w-full">
+        <div className="grid grid-cols-1 md:grid-cols-2 justify-start items-stretch gap-3 w-full h-[500px] overflow-scroll">
           {projexts.map((project, index) => (
             <div
               className="flex flex-col justify-between items-start w-full gap-2 p-5 rounded-lg bg-zinc-900
@@ -25,7 +25,7 @@ const Projects = () => {
                     href={project.link}
                     className="text-xl font-medium text-zinc-200 flex items-center gap-2 underline"
                   >
-                    <GiWireframeGlobe className="" /> {project.name}
+                    <LiaExternalLinkAltSolid className="" /> {project.name}
                   </Link>
                   <Link href={project.github} className="text-zinc-200">
                     <FaGithub className="text-2xl text-zinc-300" />
