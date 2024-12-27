@@ -11,7 +11,7 @@ const Projects = () => {
         <h2 className="text-2xl md:text-3xl font-medium text-zinc-100">
           Things i worked on
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 justify-start items-stretch gap-3 w-full h-[500px] overflow-scroll">
+        <div className="grid grid-cols-1 md:grid-cols-2 justify-start items-stretch gap-3 w-full h-[500px] md:h-auto overflow-scroll">
           {projexts.map((project, index) => (
             <div
               className="flex flex-col justify-between items-start w-full gap-2 p-5 rounded-lg bg-zinc-900
@@ -23,7 +23,7 @@ const Projects = () => {
                 <div className="flex justify-between items-center w-full">
                   <Link
                     href={project.link}
-                    className="text-xl font-medium text-zinc-200 flex items-center gap-2 underline"
+                    className="text-xl font-medium text-zinc-200 flex items-center gap-1 underline"
                   >
                     <LiaExternalLinkAltSolid className="" /> {project.name}
                   </Link>

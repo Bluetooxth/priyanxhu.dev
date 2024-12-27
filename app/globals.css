@@ -3,16 +3,15 @@
 @tailwind utilities;
 
 :root {
-  --background: #0a0a0a;
+  --background: #0f0f0f;
   --foreground: #ededed;
 }
 
 body {
   color: var(--foreground);
-  background: var(--background);
+  background-color: var(--background);
 }
 
-
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   display: none;
 }
