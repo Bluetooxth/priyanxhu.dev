@@ -1,25 +1,26 @@
-import { Urbanist } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/Footer";
-import Nav from "@/components/Nav";
 
-const urbanist = Urbanist({
+const font = Poppins({
   subsets: ["latin"],
-  weights: [400, 500, 700],
+  weight: ["400"],
 });
 
 export const metadata = {
-  title: "Priyanshu Chahar - Portfolio",
-  description: "Priyanshu Chahar's Portfolio",
+  title: "Priyanshu Chahar",
+  description:
+    "Hi, I'm Priyanshu Chahar, a developer and a competitive programmer.",
   keywords:
     "Priyanshu Chahar, Portfolio, Developer, Priyanshu Chahar Portfolio, Priyanshu Chahar Developer, Priyannxhuu, Bluetooxth",
   openGraph: {
-    title: "Priyanshu Chahar - Portfolio",
-    description: "Priyanshu Chahar's Portfolio",
+    title: "Priyanshu Chahar",
+    description:
+      "Hi, I'm Priyanshu Chahar, a developer and a competitive programmer.",
     type: "website",
     url: "https://priyanshuchahar.vercel.app",
     image: "https://avatars.githubusercontent.com/u/165533860?v=4",
-    site_name: "Priyanshu Chahar - Portfolio",
+    site_name: "Priyanshu Chahar",
     locale: "en_US",
   },
 };
@@ -27,8 +28,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={urbanist.className}>
-        <Nav />
+      <body className={font.className}>
         {children}
         <Footer />
       </body>

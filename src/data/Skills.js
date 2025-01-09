@@ -8,32 +8,21 @@ import {
 } from "react-icons/fa";
 import {
   SiTailwindcss,
-  SiTypescript,
   SiNextdotjs,
   SiExpress,
   SiMongodb,
   SiPython,
-  SiRust,
   SiPostman,
 } from "react-icons/si";
 import { FaGolang } from "react-icons/fa6";
 import { TbBrandPrisma } from "react-icons/tb";
-import { SiPostgresql } from "react-icons/si";
+import { SiPostgresql, SiCplusplus, SiBun } from "react-icons/si";
 import { TbBrandReactNative } from "react-icons/tb";
-import { FaC } from "react-icons/fa6";
 
 const skills = [
   {
     skillName: "JavaScript",
     skillIcon: <FaJsSquare />,
-  },
-  {
-    skillName: "TailwindCSS",
-    skillIcon: <SiTailwindcss />,
-  },
-  {
-    skillName: "React Native",
-    skillIcon: <TbBrandReactNative />,
   },
   {
     skillName: "ReactJS",
@@ -48,6 +37,10 @@ const skills = [
     skillIcon: <FaNodeJs />,
   },
   {
+    skillName: "Bun",
+    skillIcon: <SiBun />,
+  },
+  {
     skillName: "ExpressJS",
     skillIcon: <SiExpress />,
   },
@@ -56,20 +49,32 @@ const skills = [
     skillIcon: <TbBrandPrisma />,
   },
   {
+    skillName: "PostgreSQL",
+    skillIcon: <SiPostgresql />,
+  },
+  {
     skillName: "MongoDB",
     skillIcon: <SiMongodb />,
   },
   {
-    skillName: "PostgreSQL",
-    skillIcon: <SiPostgresql />,
+    skillName: "TailwindCSS",
+    skillIcon: <SiTailwindcss />,
+  },
+  {
+    skillName: "React Native",
+    skillIcon: <TbBrandReactNative />,
   },
   {
     skillName: "Golang",
     skillIcon: <FaGolang />,
   },
   {
-    skillName: "C lang",
-    skillIcon: <FaC />,
+    skillName: "C++",
+    skillIcon: <SiCplusplus />,
+  },
+  {
+    skillName: "Python",
+    skillIcon: <SiPython />,
   },
   {
     skillName: "Git",
