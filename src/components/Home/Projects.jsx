@@ -15,19 +15,19 @@ const Projects = () => {
           {projexts.map((project, index) => (
             <div
               key={index}
-              className="flex flex-col justify-start items-start gap-2 p-3 md:p-4 border-2 border-zinc-800 hover:border-teal-500 rounded-md bg-zinc-900 text-zinc-200 transition-all duration-300 ease-in-out"
+              className="flex flex-col justify-start items-start gap-2 p-3 md:p-4 border-2 border-zinc-800 hover:border-cyan-500 rounded-md bg-zinc-900 text-zinc-200 transition-all duration-300 ease-in-out overflow-hidden"
             >
               <div className="flex justify-between items-center w-full">
                 <Link
                   href={project.link}
-                  className="text-xl font-normal text-zinc-200 border-b-2 border-transparent hover:border-teal-500 flex items-center gap-1"
+                  className="text-xl font-normal text-zinc-200 border-b-2 border-transparent hover:border-cyan-500 flex items-center gap-1"
                 >
                   <RiExternalLinkFill />
                   {project.name}
                 </Link>
                 <Link
                   href={project.github}
-                  className="text-xl font-normal text-zinc-200 p-2 border-2 border-zinc-800 hover:border-teal-500 rounded-md transition-all duration-300 ease-in-out"
+                  className="text-xl font-normal text-zinc-200 p-2 border-2 border-zinc-800 hover:border-cyan-500 rounded-md transition-all duration-300 ease-in-out"
                 >
                   <FaGithub />
                 </Link>

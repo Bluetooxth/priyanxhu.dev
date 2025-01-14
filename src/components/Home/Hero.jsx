@@ -51,20 +51,23 @@ const Hero = () => {
           <p className="text-md text-zinc-200">
             {`3rd-year CS student, passionate about devlopment, problem-solving and learning new things.`}
           </p>
+          <p className="text-sm text-green-600">
+            {`* Currently i am learning AiML`}
+          </p>
           <div className="flex flex-wrap justify-start items-center gap-3 mt-2">
             {socials.map((social, index) => (
               <Link
                 key={index}
                 href={social.link}
                 className="text-2xl text-zinc-200 p-2 rounded-md bg-zinc-900 border-2
-                border-zinc-800 hover:border-teal-500 transition-all duration-300 ease-in-out font-normal"
+                border-zinc-800 hover:border-cyan-500 transition-all duration-300 ease-in-out font-normal"
               >
                 {social.icon}
               </Link>
             ))}
           </div>
         </div>
-        <div className="h-40 w-40 rounded-lg overflow-hidden border-b-2 border-teal-500 flex justify-center items-center">
+        <div className="h-40 w-40 p-[1.5px] rounded-lg overflow-hidden bg-gradient-to-br from-cyan-600 to-rose-600 flex justify-center items-center">
           <img
             src="https://avatars.githubusercontent.com/u/165533860?v=4"
             alt=""

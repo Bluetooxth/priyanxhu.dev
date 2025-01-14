@@ -10,7 +10,7 @@ const Skills = () => {
           {skills.map((skill, index) => (
             <div
               key={index}
-              className="flex justify-center items-center gap-1 px-2 md:px-3 py-[6px] md:py-2 border-2 border-zinc-800 hover:border-teal-500 rounded-md bg-zinc-900 text-zinc-200 transition-all duration-300 ease-in-out"
+              className="flex justify-center items-center gap-1 px-2 md:px-3 py-[6px] md:py-2 border-2 border-zinc-800 hover:border-cyan-500 rounded-md bg-zinc-900 text-zinc-200 transition-all duration-300 ease-in-out overflow-hidden"
             >
               <p className="text-lg">{skill.skillIcon}</p>
               <p className="text-md font-normal">{skill.skillName}</p>

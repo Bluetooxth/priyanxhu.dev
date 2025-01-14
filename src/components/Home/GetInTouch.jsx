@@ -10,6 +10,11 @@ const GetInTouch = () => {
   const [button, setButton] = useState("Send");
 
   const handleSubmit = async (e) => {
+    if (name === "" || email === "" || message === "") {
+      setButton("Error");
+      return;
+    }
+
     e.preventDefault();
     try {
       await axios.post("/api/contact", {
@@ -41,7 +46,8 @@ const GetInTouch = () => {
               placeholder="Your name"
               value={name}
               onChange={(e) => setName(e.target.value)}
-              className="w-full px-2 py-[6px] md:py-2 border-2 border-zinc-800 focus:border-teal-500 rounded-md bg-zinc-900 text-zinc-200 transition-all duration-300 ease-in-out outline-none text-md font-normal"
+              required
+              className="w-full px-2 py-[6px] md:py-2 border-2 border-zinc-800 focus:border-cyan-500 rounded-md bg-zinc-900 text-zinc-200 transition-all duration-300 ease-in-out outline-none text-md font-normal"
             />
           </div>
           <div className="flex flex-col justify-start items-start gap-2 w-full">
@@ -52,8 +58,9 @@ const GetInTouch = () => {
               type="email"
               placeholder="youremail@example.com"
               value={email}
+              required
               onChange={(e) => setEmail(e.target.value)}
-              className="w-full px-2 py-[6px] md:py-2 border-2 border-zinc-800 focus:border-teal-500 rounded-md bg-zinc-900 text-zinc-200 transition-all duration-300 ease-in-out outline-none text-md font-normal"
+              className="w-full px-2 py-[6px] md:py-2 border-2 border-zinc-800 focus:border-cyan-500 rounded-md bg-zinc-900 text-zinc-200 transition-all duration-300 ease-in-out outline-none text-md font-normal"
             />
           </div>
           <div className="flex flex-col justify-start items-start gap-2 w-full">
@@ -68,13 +75,14 @@ const GetInTouch = () => {
               placeholder="Your message"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
-              className="w-full px-2 py-[6px] md:py-2 border-2 border-zinc-800 focus:border-teal-500 rounded-md bg-zinc-900 text-zinc-200 transition-all duration-300 ease-in-out outline-none text-md font-normal"
+              required
+              className="w-full px-2 py-[6px] md:py-2 border-2 border-zinc-800 focus:border-cyan-500 rounded-md bg-zinc-900 text-zinc-200 transition-all duration-300 ease-in-out outline-none text-md font-normal"
             ></textarea>
           </div>
           <button
             type="submit"
             onClick={handleSubmit}
-            className="px-5 py-[6px] md:py-2 border-2 border-teal-500 rounded-md bg-zinc-900
+            className="px-5 py-[6px] md:py-2 rounded-md bg-gradient-to-tr from-cyan-600 to-rose-600
           text-zinc-200 text-md font-normal transition-all duration-300 ease-in-out flex items-center gap-2"
           >
             {button} <LuSendHorizontal />
